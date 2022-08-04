@@ -19,6 +19,7 @@ private:
     char name[32];
     int roll;
     int mark[6];
+    int total;
 
 public:
     void read()
@@ -31,6 +32,7 @@ public:
             cout << "Mark in "
                  << "subject- " << i + 1 << endl;
             cin >> mark[i];
+            total += mark[i];
         }
     }
     void print()
@@ -44,6 +46,12 @@ public:
             tmark = tmark + mark[i];
         }
     }
+    void getTotal(){
+        cout<<"Total Mark = "<<total<<endl;
+    }
+    void getAvg(){
+        cout<<"Average Mark = "<<total/6<<endl;
+    }
 };
 
 int main()
@@ -51,6 +59,7 @@ int main()
     Student obj;
     obj.read();
     obj.print();
-
+    obj.getTotal();
+    obj.getAvg();
     return 0;
 }
