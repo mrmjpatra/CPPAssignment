@@ -25,11 +25,10 @@ public:
     {
         cout << "Enter the name and roll number of  Student" << endl;
         cin >> name >> roll;
-        cout << "Enter the marks in 6 objects" << endl;
+        cout << "Enter the marks in 6 subjects" << endl;
         for (int i = 0; i < 6; i++)
         {
-            cout << "Mark in "
-                 << "subject- " << i + 1 << endl;
+            cout << "Mark in subject- " << i + 1 << endl;
             cin >> mark[i];
         }
     }
@@ -37,14 +36,14 @@ public:
     {
         cout << "Name = " << name << endl;
         cout << "Roll = " << roll << endl;
-        float tmark, avg;
+        float tmark;
         for (int i = 0; i < 6; i++)
         {
-            cout << "Subject-" << i + 1 << "= " << mark[0] << endl;
+            cout << "Subject-" << i + 1 << "= " << mark[i] << endl;
             tmark = tmark + mark[i];
         }
-        cout<<"Total mark "<<"= "<<tmark<<endl;
-        cout<<"Average mark"<<" = "<<tmark/6<<endl;
+        cout << "Total mark = " << tmark << endl;
+        cout << "Average mark = " << tmark / 6 << endl;
     }
 };
 
