@@ -37,7 +37,7 @@ public:
 };
 int main()
 {
-    Employees EMP[10];
+    Employees EMP[50];
     int n;
     cout << "How many number of employees data you want to store" << endl;
     cin >> n;

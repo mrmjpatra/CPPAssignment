@@ -16,7 +16,7 @@ public:
     }
     void print()
     {
-        cout << hh<<" hh"<< " :" << mm<<" mm" << " :" << ss<<" ss" << endl;
+        cout << hh<<" hh:" << mm<<" mm:" << ss<<" ss" << endl;
     }
     Time sum(Time B)
     {
@@ -24,8 +24,12 @@ public:
         temp.ss = ss + B.ss;
         temp.mm = mm + B.mm + (temp.ss / 60);
         temp.hh = hh + B.hh + (temp.mm / 60);
+        cout<<temp.ss<<endl;
+        cout<<temp.mm<<endl;
         temp.mm = temp.mm % 60;
         temp.ss = temp.ss % 60;
+        cout<<temp.ss<<endl;
+        cout<<temp.mm<<endl;
         return temp;
     }
     Time diff(Time B)
@@ -40,7 +44,7 @@ public:
         if (B.mm > mm)
         {
             --hh;
-            hh += 60;
+            mm += 60;
         }
         C.mm = mm - B.mm;
         C.hh = hh - B.hh;
