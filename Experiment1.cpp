@@ -43,6 +43,8 @@ public:
             cout << "Subject-" << i + 1 << "= " << mark[0] << endl;
             tmark = tmark + mark[i];
         }
+        cout<<"Total mark "<<"= "<<tmark<<endl;
+        cout<<"Average mark"<<" = "<<tmark/6<<endl;
     }
 };
 
