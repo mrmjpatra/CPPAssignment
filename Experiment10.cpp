@@ -20,7 +20,6 @@ public:
     {
         if (n2 == 0)
             throw n2;
-        float res = n1 / n2;
         cout << n1 << "/" << n2 << " : " << n1 / n2 << endl;
     }
 };
