@@ -5,23 +5,38 @@ method.
 #include <iostream>
 using namespace std;
 
-int main()
+class Division
 {
+private:
     float n1, n2;
-    try
+
+public:
+    void read()
     {
         cout << "Enter two number for division" << endl;
         cin >> n1 >> n2;
+    }
+    void calculate()
+    {
         if (n2 == 0)
             throw n2;
+        float res = n1 / n2;
+        cout << n1 << "/" << n2 << " : " << n1 / n2 << endl;
+    }
+};
 
-        float res=n1/n2;
-        cout<<n1<<"/"<<n2<<" : "<<n1/n2<<endl;
+int main()
+{
+
+    try
+    {
+        Division obj;
+        obj.read();
+        obj.calculate();
     }
     catch (float e)
     {
-        cout << n1 << "/" << n2 << endl;
-        cout <<"Division by zero"<<endl;
+        cout << "Division by zero is not possible" << endl;
     }
 
     return 0;

@@ -1,4 +1,4 @@
-// Write a C++ program using pure abstract class.x
+// Write a C++ program using pure abstract class.
 
 #include <iostream>
 using namespace std;
@@ -25,13 +25,16 @@ public:
     }
 };
 
-class Product:public Number{
-    private:
-    float a,b;
-    public:
-    void read(){
-        cout<<"Enter two number for multiplication"<<endl;
-        cin>>a>>b;
+class Product : public Number
+{
+private:
+    float a, b;
+
+public:
+    void read()
+    {
+        cout << "Enter two number for multiplication" << endl;
+        cin >> a >> b;
     }
     void print()
     {
