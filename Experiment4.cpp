@@ -75,7 +75,7 @@ int main()
     B.print();
     cout << "Sum of the Two Matrix is " << endl;
     C.print();
-    cout << "Subtraction of matrix is " << endl;
+    cout << "Subtraction of Two matrix is " << endl;
     D.print();
 
     return 0;

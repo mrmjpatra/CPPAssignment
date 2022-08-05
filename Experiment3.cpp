@@ -10,19 +10,19 @@ class Employees
 private:
     char name[20];
     char gender[7];
-    char post[20];
+    char post[30];
     float salary;
 
 public:
     void read()
     {
-        cin.clear();
+        getchar();
         cout << "Enter the employee name : ";
-        cin >> name;
+        cin.getline(name, 20);
         cout << "Enter Gender : ";
-        cin >> gender;
+        cin.getline(gender, 7);
         cout << "Enter Post : ";
-        cin >> post;
+        cin.getline(post, 30);
         cout << "Enter Salary : ";
         cin >> salary;
     }
